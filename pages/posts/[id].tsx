@@ -15,15 +15,20 @@ export default function Post({ postData }: PostProps) {
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <article>
-                <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-                <div className={utilStyles.lightText}>
-                    <Date dateString={postData.date} />
-                </div>
+            <Layout>
+                <Head>
+                    <title>{postData.title}</title>
+                </Head>
+                {postData.title}
+                <br />
+                {postData.id}
+                <br />
+                <Date dateString={postData.date} />
+                <br />
                 <div
                     dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
                 />
-            </article>
+            </Layout>
         </Layout>
     );
 }
