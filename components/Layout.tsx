@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { PropsWithChildren } from 'react';
 
 import utilStyles from '../styles/utils.module.css';
-import styles from './layout.module.css';
+import styles from './Layout.module.css';
 
 const name = 'Laurenz Nitert';
 export const siteTitle = 'Next.js Sample Website';
